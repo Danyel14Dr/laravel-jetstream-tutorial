@@ -5,7 +5,7 @@
         <div class="alert alert-success">{{ session('success') }}</div>
     @endif
 
-    <form wire:submit.prevent="{{ $modoEdicion ? 'actualizar' : 'save' }}">
+    <form wire:submit.prevent="{{ $modoEdicion ? 'actualizar' : 'guardar' }}">
         <div class="row mb-3">
             <div class="col">
                 <input type="text" class="form-control" wire:model="sku" placeholder="SKU">
